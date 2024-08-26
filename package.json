@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .jsx,.ts,.js,.tsx .",
-    "lint:fix": "eslint --ext .jsx,.ts,.js,.tsx . --fix",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
     "format": "prettier --write src",
     "format:check": "prettier --check src"
   },
