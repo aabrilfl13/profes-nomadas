@@ -1,3 +1,4 @@
+import Button from "../../common/button";
 const Hero = () => {
 	return (
 		<div
@@ -10,14 +11,15 @@ const Hero = () => {
 			<div className="hero-overlay bg-opacity-60"></div>
 			<div className="hero-content text-neutral-content text-center">
 				<div className="max-w-md">
-					<h1 className="mb-5 text-3xl font-bold">¿Quieres vivir una nueva experiencia única en Irlanda?
+					<h1 className="mb-5 text-3xl font-bold">
+						¿Quieres vivir una nueva experiencia única en Irlanda?
 					</h1>
 					<p className="mb-5">Explora nuestros packs</p>
-		
+					<Button text="VER PACKS" color="btn-secondary" />
 				</div>
 			</div>
 		</div>
 	);
 };
 
-export default Hero 
+export default Hero;
