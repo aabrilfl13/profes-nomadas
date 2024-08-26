@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint --ext .jsx,.ts,.js,.tsx .",
+    "lint:fix": "eslint --ext .jsx,.ts,.js,.tsx . --fix",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",

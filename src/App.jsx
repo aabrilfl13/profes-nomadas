@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import HomePage from './pages/HomePage'
-import './App.css'
+import { useState } from "react"
+import HomePage from "./pages/HomePage"
+import "./App.css"
 
 function App() {
-  const [count, setCount] = useState(0)
+	const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <HomePage/>
-    </>
-  )
+	return (
+		<>
+			<HomePage />
+		</>
+	)
 }
 
 export default App
