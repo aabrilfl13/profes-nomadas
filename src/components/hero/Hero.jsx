@@ -1,3 +1,4 @@
+import Button from "../../common/button";
 const Hero = () => {
 	return (
 		<div
