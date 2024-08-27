@@ -18,7 +18,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Cache
+        id: cache
+        uses: actions/cache@v4.0.2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
         run: npm install
       - name: Build
         run: npm run build
