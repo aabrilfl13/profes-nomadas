@@ -1,10 +1,11 @@
-import { useState } from "react";
-import ToogleMenu from "./ToogleMenu";
+import { useState } from "react"
+import ToogleMenu from "./ToogleMenu"
+
 const HamburgerButton = () => {
-	const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false)
 
 	function toggleMenu() {
-		setIsOpen(!isOpen);
+		setIsOpen(!isOpen)
 	}
 	return (
 		<div>
@@ -25,7 +26,7 @@ const HamburgerButton = () => {
 			</button>
 			{isOpen && <ToogleMenu />}
 		</div>
-	);
-};
+	)
+}
 
-export default HamburgerButton;
+export default HamburgerButton

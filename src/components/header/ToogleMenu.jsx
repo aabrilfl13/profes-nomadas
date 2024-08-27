@@ -1,6 +1,6 @@
 const ToogleMenu = () => {
 	return (
-		<div className="absolute top-15 left-0 bg-white shadow-lg rounded-lg p-4">
+		<div className="top-15 absolute left-0 rounded-lg bg-white p-4 shadow-lg">
 			<ul>
 				<li className="py-2">
 					<a href="#home">Home</a>
@@ -16,7 +16,7 @@ const ToogleMenu = () => {
 				</li>
 			</ul>
 		</div>
-	);
-};
+	)
+}
 
-export default ToogleMenu;
+export default ToogleMenu

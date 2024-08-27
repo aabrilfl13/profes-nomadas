@@ -31,3 +31,29 @@ jobs:
         run: npm install --include=dev
       - name: Build
         run: npm run build
+
+  code_checks:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Cache
+        id: cache
+        uses: actions/cache@v4.0.2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm install --include=dev
+      # - name: Lint  TODO: Activate once we fix the errors
+      #   run: npm run lint
+      - name: Formatter
+        run: npm run format:check
