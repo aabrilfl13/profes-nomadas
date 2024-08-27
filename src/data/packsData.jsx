@@ -1,4 +1,4 @@
-import educacionIrlanda from "../assets/Educacion-Irlanda.png"
+import educacionIrlanda from "../assets/BackgroundHero.png"
 
 //Datos de los precios para el componente pack
 //El bascio siempre tiene que estar , los demas precios son opcionales

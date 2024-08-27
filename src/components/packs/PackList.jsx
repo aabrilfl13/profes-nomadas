@@ -1,5 +1,4 @@
-import React from "react"
-import Pack from "./pack"
+import Pack from "@/components/packs/Pack"
 
 const PackList = ({ packs }) => {
 	return (
