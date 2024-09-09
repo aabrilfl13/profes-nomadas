@@ -1,7 +1,7 @@
-import Header from "../components/header/Header"
-import Hero from "../components/hero/Hero"
-import PackList from "../components/packs/PackList"
-import { packsData } from "../data/packsData"
+import Header from "@/components/header/Header"
+import Hero from "@/components/hero/Hero"
+import PackList from "@/components/packs/PackList"
+import { packsData } from "@/data/constants"
 
 const HomePage = () => {
 	return (
