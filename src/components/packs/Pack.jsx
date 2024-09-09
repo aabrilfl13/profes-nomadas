@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"
+
 const Pack = ({ name, image, prices }) => {
 	const { basic, medium, premium, extraPremium } = prices
 
@@ -36,6 +38,17 @@ const Pack = ({ name, image, prices }) => {
 			</div>
 		</div>
 	)
+}
+
+Pack.propTypes = {
+	name: PropTypes.string.isRequired,
+	image: PropTypes.string.isRequired,
+	prices: PropTypes.shape({
+		basic: PropTypes.number.isRequired,
+		medium: PropTypes.number,
+		premium: PropTypes.number,
+		extraPremium: PropTypes.number,
+	}).isRequired,
 }
 
 export default Pack
