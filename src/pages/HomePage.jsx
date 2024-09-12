@@ -1,7 +1,8 @@
 import Header from "@/components/header/Header"
 import Hero from "@/components/hero/Hero"
 import PackList from "@/components/packs/PackList"
-import { packsData } from "@/data/constants"
+import TikTokList from "@/components/tiktok/TikTokList"
+import { packsData, tiktokData } from "@/data/constants"
 
 const HomePage = () => {
 	return (
@@ -10,6 +11,7 @@ const HomePage = () => {
 			<Header />
 			<Hero />
 			<PackList packs={packsData} />
+			<TikTokList tiktoks={tiktokData} />
 		</div>
 	)
 }
