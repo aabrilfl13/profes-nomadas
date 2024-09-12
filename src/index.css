@@ -21,8 +21,6 @@
 	font-weight: 400;
 
 	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -47,7 +45,7 @@ body {
 	font-family: PPNeueMachina, sans-serif;
 	line-height: 1.1;
 
-	color: rgb(255 255 255 / var(--tw-text-opacity));
+	color: rgb(1 1 1 / var(--tw-text-opacity));
 	background-color: rgb(22 22 22 / var(--tw-bg-opacity));
 }
 
