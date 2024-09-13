@@ -14,7 +14,7 @@ const sliderProps = {
 	spaceBetween: 15,
 	loop: true,
 	navigation: true,
-	centeredSlides: false,
+	centeredSlides: true,
 	initialSlide: 1, // Set the second slide as the default active slide
 	onSlideChange: () => console.log("slide change"),
 	onSwiper: (swiper) => console.log(swiper),
