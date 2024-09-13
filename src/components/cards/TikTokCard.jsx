@@ -39,10 +39,18 @@ const TikTokCard = ({ data }) => {
 				)}
 
 				{/* Overlay Section */}
-				<div className="absolute bottom-0 left-0 flex w-full items-center justify-between bg-gradient-to-t from-black/60 to-transparent p-4 text-black">
-					<div>
-						<h2 className="text-lg font-bold">{data.title}</h2>
-						<p className="text-sm">{data.description}</p>
+				<div className="bg-black">
+					<div
+						className="items-cent absolute bottom-0 left-0 z-10 flex w-full justify-between p-4 text-white"
+						style={{
+							background:
+								"linear-gradient(to top, rgba(0, 0, 0, 0.8) 70%, rgba(108, 117, 125, 0) 100%)",
+						}}
+					>
+						<div>
+							<h2 className="text-lg font-bold">{data.title}</h2>
+							<p className="text-sm">{data.description}</p>
+						</div>
 					</div>
 				</div>
 			</div>
