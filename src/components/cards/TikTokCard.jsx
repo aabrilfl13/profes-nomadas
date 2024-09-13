@@ -1,23 +1,29 @@
 import PropTypes from "prop-types"
 import { useState } from "react"
 
-const TikTokCard = ({ data }) => {
-	const [isMuted, setIsMuted] = useState(true)
-	const [videoError, setVideoError] = useState(false)
+import "./tikTokCard.css"
 
-	const handleVideoClick = (event) => {
+const TikTokCard = ({ data }) => {
+	const [videoError, setVideoError] = useState(false)
+	const [showButton, setShowButton] = useState(false)
+	const [isClicked, setIsClicked] = useState(false)
+
+	const handleCardClick = (event) => {
 		event.preventDefault()
-		setIsMuted(!isMuted)
+		setShowButton(!showButton)
+		setIsClicked(!isClicked)
+	}
+
+	const handleButtonClick = (event) => {
+		event.stopPropagation() // Prevent the click event from bubbling up to the card
 	}
 
 	const handleVideoError = () => {
 		setVideoError(true)
 	}
 
-	console.log(data)
-
 	return (
-		<div className="h-[474px] max-w-[267px] overflow-hidden rounded-3xl text-black shadow-xl">
+		<div className="card">
 			<div className="relative h-full w-full">
 				{videoError ? (
 					<div className="flex h-full w-full items-center justify-center">
@@ -26,20 +32,35 @@ const TikTokCard = ({ data }) => {
 				) : (
 					<video
 						className="flex h-full w-full cursor-pointer"
-						muted={isMuted}
+						muted={true}
 						loop
 						autoPlay
 						playsInline
-						onClick={handleVideoClick}
 						onError={handleVideoError}
+						onClick={handleCardClick}
 					>
 						<source src={data.url} type="video/mp4" />
 						Your browser does not support the video tag.
 					</video>
 				)}
-
+				{showButton && (
+					<div
+						className={`absolute inset-0 z-50 flex items-center justify-center ${isClicked ? "bg-black/50" : ""}`}
+						onClick={handleCardClick}
+					>
+						<a
+							href={data.url}
+							className="rounded-xl bg-white px-4 py-2 text-black"
+							target="_blank"
+							rel="noopener noreferrer"
+							onClick={handleButtonClick}
+						>
+							Saber más
+						</a>
+					</div>
+				)}
 				{/* Overlay Section */}
-				<div className="absolute bottom-0 left-0 flex w-full items-center justify-between bg-gradient-to-t from-black/60 to-transparent p-4 text-black">
+				<div className="overlay">
 					<div>
 						<h2 className="text-lg font-bold">{data.title}</h2>
 						<p className="text-sm">{data.description}</p>
