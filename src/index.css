@@ -10,7 +10,7 @@
 	box-sizing: border-box;
 	list-style: none;
 	text-decoration: none;
-	border: 1px solid rgb(255, 0, 0, 0.2);
+	/* border: 1px solid rgb(255, 0, 0, 0.2); */
 	/* Debug purpose */
 	/* TODO: Make this only visible in dev mode */
 }

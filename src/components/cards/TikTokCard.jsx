@@ -17,46 +17,32 @@ const TikTokCard = ({ data }) => {
 	console.log(data)
 
 	return (
-		// <div className="card h-[500px] w-[280px] overflow-hidden rounded-[32px] bg-base-100 shadow-xl">
-		// 	{/* Video Section */}
-		// 	<div className="relative h-full w-full">
-		// 		{videoError ? (
-		// 			<div className="flex h-full w-full items-center justify-center">
-		// 				<p className="text-center">HERE IS THE VIDEO</p>
-		// 			</div>
-		// 		) : (
-		// 			<video
-		// 				className="w-ful h-full cursor-pointer"
-		// 				muted={isMuted}
-		// 				loop
-		// 				autoPlay
-		// 				onClick={handleVideoClick}
-		// 				onError={handleVideoError}
-		// 			>
-		// 				<source src={data.url} type="video/mp4" />
-		// 				Your browser does not support the video tag.
-		// 			</video>
-		// 		)}
-		// 		{/* Overlay Section */}
-		// 		<div className="absolute bottom-0 left-0 flex w-full items-center justify-between bg-gradient-to-t from-black/60 to-transparent p-4 text-white">
-		// 			<div>
-		// 				<h2 className="text-lg font-bold">{data.title}</h2>
-		// 				<p className="text-sm">{data.description}</p>
-		// 			</div>
-		// 		</div>
-		// 	</div>
-		// </div>
-		<div className="h-[500px] max-w-[280px] overflow-hidden rounded-3xl bg-white text-black shadow-xl">
+		<div className="h-[474px] max-w-[267px] overflow-hidden rounded-3xl text-black shadow-xl">
 			<div className="relative h-full w-full">
-				<div className="flex h-full w-full items-center justify-center">
-					<p className="text-center">{data.title}</p>
-				</div>
+				{videoError ? (
+					<div className="flex h-full w-full items-center justify-center">
+						<p className="text-center">HERE IS THE VIDEO</p>
+					</div>
+				) : (
+					<video
+						className="flex h-full w-full cursor-pointer"
+						muted={isMuted}
+						loop
+						autoPlay
+						playsInline
+						onClick={handleVideoClick}
+						onError={handleVideoError}
+					>
+						<source src={data.url} type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
+				)}
 
 				{/* Overlay Section */}
 				<div className="absolute bottom-0 left-0 flex w-full items-center justify-between bg-gradient-to-t from-black/60 to-transparent p-4 text-black">
 					<div>
-						<h2 className="text-lg font-bold">A TITLE</h2>
-						<p className="text-sm">a description, just introduction</p>
+						<h2 className="text-lg font-bold">{data.title}</h2>
+						<p className="text-sm">{data.description}</p>
 					</div>
 				</div>
 			</div>
