@@ -1,4 +1,6 @@
 import Button from "@/common/Button"
+import "../../App.css"
+
 const Hero = () => {
 	return (
 		<div
@@ -15,7 +17,7 @@ const Hero = () => {
 						¿Quieres vivir una nueva experiencia única en Irlanda?
 					</h1>
 					<p className="mb-5">Explora nuestros packs</p>
-					<Button text="VER PACKS" color="btn-secondary" />
+					<Button text="VER PACKS" color="custom-gradient" />
 				</div>
 			</div>
 		</div>
