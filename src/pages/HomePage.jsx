@@ -14,7 +14,6 @@ const HomePage = () => {
 			<PackList packs={packsData} />
 			<TikTokList tiktoks={tiktokData} sliderProps={sliderProps} />
 			<ReviewList reviews={reviewsData} sliderProps={sliderProps} />
-			
 		</div>
 	)
 }
