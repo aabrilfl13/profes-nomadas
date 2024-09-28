@@ -2,7 +2,6 @@ import PropTypes from "prop-types"
 import { Swiper, SwiperSlide } from "swiper/react"
 import ReviewCard from "@/components/cards/ReviewCard"
 
-
 const ReviewList = ({ reviews, sliderProps }) => {
 	return (
 		<section className="my-20 sm:my-32">
