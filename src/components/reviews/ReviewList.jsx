@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import { Swiper, SwiperSlide } from "swiper/react"
-import ReviewCard from "../cards/ReviewCard"
+import ReviewCard from "../cards/ReviewCard.jsx"
 
 const ReviewList = ({ reviews, sliderProps }) => {
 	return (
