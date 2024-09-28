@@ -1,25 +1,31 @@
-import './ReviewCard.css';
-import logo from '../../assets/img/logo-nomada.png';
+import "./ReviewCard.css"
+import PropTypes from "prop-types"
 
-const ReviewCard = () => {
-    return (
-    <div className='flex justify-center'>
-      <div className="review-card flex items-center rounded-lg shadow-lg p-1 w-80 h-28">
-        <div className="mr-2">
-          <img src={logo} alt="Icono" className="w-48 h-24 rounded-full" />
-        </div>
-        <div>
-          <div className="flex items-center my-1">
-            <h3 className="font-bold text-sm">María Belenguer</h3>
-            <span className="text-yellow-500">★★★★★</span>
-            <span className="text-gray-500 ml-1">★</span>
-          </div>
-          <p className="text-xs mt-2">Me encanta desde el primer momento en que la vi. Mi acento british ha mejorado muchísimo.</p>
-        </div>
-      </div>
-    </div>
-    );
-  }
-  
-  export default ReviewCard;
-  
+const ReviewCard = ({ data }) => {
+	return (
+		<div className="flex justify-center">
+			<div className="review-card flex h-28 w-80 items-center rounded-lg p-1 shadow-lg">
+				<div className="mr-2">
+					<img src={data.logo} alt="Icono" className="h-24 w-48 rounded-full" />
+				</div>
+				<div>
+					<div className="my-1 flex items-center">
+						<h3 className="text-sm font-bold">{data.name}</h3>
+						<span className="text-yellow-500">★★★★★</span>
+						<span className="ml-1 text-gray-500">★</span>
+					</div>
+					<p className="mt-2 text-xs">{data.description}</p>
+				</div>
+			</div>
+		</div>
+	)
+}
+
+ReviewCard.propTypes = {
+	data: PropTypes.shape({
+		name: PropTypes.string.isRequired,
+		description: PropTypes.string.isRequired,
+		logo: PropTypes.string.isRequired,
+	}).isRequired,
+}
+export default ReviewCard
