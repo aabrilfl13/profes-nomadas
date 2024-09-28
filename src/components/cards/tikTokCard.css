@@ -1,5 +1,5 @@
 /* TikTokCard.css */
-.card {
+.tiktok-card {
 	@apply h-[474px] max-w-[267px] overflow-hidden rounded-3xl shadow-xl;
 	@apply text-black;
 }
