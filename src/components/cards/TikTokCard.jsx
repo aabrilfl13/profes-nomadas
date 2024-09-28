@@ -23,7 +23,7 @@ const TikTokCard = ({ data }) => {
 	}
 
 	return (
-		<div className="card">
+		<div className="tiktok-card">
 			<div className="relative h-full w-full">
 				{videoError ? (
 					<div className="flex h-full w-full items-center justify-center">

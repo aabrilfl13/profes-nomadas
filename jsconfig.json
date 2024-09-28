@@ -1,13 +1,9 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"@/*": [
-				"./src/*"
-			]
-		}
-	},
-	"exclude": [
-		"public"
-	]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["public"]
 }

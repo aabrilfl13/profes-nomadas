@@ -2,6 +2,11 @@ import titokVideo from "@/assets/videos/tiktok.mp4"
 import titokVideo1 from "@/assets/videos/vid1.mp4"
 import titokVideo2 from "@/assets/videos/vid2.mp4"
 import educacionIrlanda from "../assets/BackgroundHero.png"
+import logo1 from "../assets/img/logo-nomada.png"
+import { FreeMode } from "swiper/modules"
+
+import "swiper/css"
+import "swiper/css/free-mode"
 
 //Datos de los precios para el componente pack
 //El bascio siempre tiene que estar , los demas precios son opcionales
@@ -56,3 +61,40 @@ export const tiktokData = [
 		url: titokVideo2,
 	},
 ]
+
+export const reviewsData = [
+	{
+		name: "María Belenguer",
+		description:
+			"Me encanta desde el primer momento en la que la vi. \
+		 Mi acento british ha mejorado muchísimo",
+		logo: logo1,
+	},
+	{
+		name: "Ramon Belenguer",
+		description:
+			"Increible experiencia, \
+		 Empece desde 0 y llegue hasta masachusen",
+		logo: logo1,
+	},
+	{
+		name: "Jorge Belenguer",
+		description:
+			"Increible experiencia, \
+		 Empece desde 0 y llegue hasta masachusen",
+		logo: logo1,
+	},
+]
+
+export const sliderProps = {
+	modules: [FreeMode],
+	freeMode: false,
+	slidesPerView: "auto",
+	spaceBetween: 15,
+	loop: true,
+	navigation: true,
+	centeredSlides: true,
+	initialSlide: 1,
+	onSlideChange: () => console.log("slide change"),
+	onSwiper: (swiper) => console.log(swiper),
+}

@@ -1,0 +1,16 @@
+/* ReviewCard.css */
+.review-card {
+	background: linear-gradient(
+		135deg,
+		#f3c9cd 34%,
+		#f0b8c4 54%,
+		#edaabd 69%,
+		#c4dea7 89%,
+		#e5da9f 99%
+	);
+	border-radius: 12px;
+	transition: all 0.3s ease;
+}
+.review-card:hover {
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
