@@ -1,5 +1,5 @@
-import "./reviewCard.css"
 import PropTypes from "prop-types"
+import "./reviewCard.css"
 
 const ReviewCard = ({ data }) => {
 	return (
