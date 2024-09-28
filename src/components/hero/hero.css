@@ -1,0 +1,6 @@
+.hero-container {
+	background-image: url("/src/assets/img/hero-nomada.png");
+	background-size: cover;
+	height: 669px;
+	width: auto;
+}
