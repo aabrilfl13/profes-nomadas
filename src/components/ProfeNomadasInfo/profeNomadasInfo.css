@@ -1,0 +1,28 @@
+.profe-nomadas-gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+
+#profe-nomada-1 {
+	position: relative;
+	max-width: none;
+	right: 4%;
+	top: 4%;
+}
+#profe-nomada-2 {
+	position: relative;
+	max-width: none;
+	right: 12%;
+	top: 23%;
+}
+#profe-nomada-3 {
+	position: relative;
+	bottom: 63.5%;
+	right: 5%;
+}
+#profe-nomada-4 {
+	position: relative;
+	right: 40%;
+	bottom: 40%;
+}

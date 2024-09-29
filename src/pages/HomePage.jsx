@@ -4,11 +4,13 @@ import TikTokList from "@/components/tiktok/TikTokList"
 import { packsData, reviewsData, tiktokData } from "@/data/constants"
 import ReviewList from "@/components/reviews/ReviewList"
 import { sliderProps } from "@/data/constants"
+import ProfeNomadaInfo from "@/components/ProfeNomadasInfo/ProfeNomadasInfo"
 const HomePage = () => {
 	return (
 		<div>
 			{/* Esto es para ir viend como queda */}
 			<Hero />
+			<ProfeNomadaInfo />
 			<PackList packs={packsData} />
 			<TikTokList tiktoks={tiktokData} sliderProps={sliderProps} />
 			<ReviewList reviews={reviewsData} sliderProps={sliderProps} />
