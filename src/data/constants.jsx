@@ -66,22 +66,22 @@ export const reviewsData = [
 	{
 		name: "María Belenguer",
 		description:
-			"Me encanta desde el primer momento en la que la vi. \
-		 Mi acento british ha mejorado muchísimo",
+			"Me encanta desde el primer momento en la que la vi.\
+				Mi acento british ha mejorado muchísimo",
 		logo: logo1,
 	},
 	{
 		name: "Ramon Belenguer",
 		description:
-			"Increible experiencia, \
-		 Empece desde 0 y llegue hasta masachusen",
+			"La compré sin pensarlo dos veces, y ha sido la mejor decisión.\
+				Mi acento se nota mucho más natural.",
 		logo: logo1,
 	},
 	{
 		name: "Jorge Belenguer",
 		description:
-			"Increible experiencia, \
-		 Empece desde 0 y llegue hasta masachusen",
+			"Es exactamente lo que necesitaba. Desde el primer uso,\
+				noté una gran mejora en mi pronunciación.",
 		logo: logo1,
 	},
 ]
