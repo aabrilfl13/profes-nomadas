@@ -11,7 +11,7 @@ const ProfeNomadaInfo = () => {
 			<h1 className="mb-2 mt-4">
 				¿Qué es <br /> Profe Nómadas?
 			</h1>
-			<p>
+			<p className="mt-4">
 				En Profes Nómadas creemos que la enseñanza no tiene que limitarse a un aula tradicional.
 				Nuestra misión es empoderar a maestr@s y maestros jóvenes que buscan llevar su pasión por la
 				enseñanza más allá de las fronteras, explorando nuevas culturas y formas de vida mientras
