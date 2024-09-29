@@ -3,7 +3,7 @@ import Pack from "@/components/packs/Pack"
 
 const PackList = ({ packs }) => {
 	return (
-		<div className="pack-list mt-5 flex flex-col items-center">
+		<div className="pack-list flex flex-col items-center">
 			<h1 className="text-2xl">Nuestros Planes</h1>
 			{packs.map((pack, index) => (
 				<Pack key={index} {...pack} />
