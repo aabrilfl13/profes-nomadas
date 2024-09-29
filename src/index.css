@@ -3,32 +3,31 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'Hagrid';
-	src: url('assets/fonts/Hagrid-Regular-trial.ttf') format('truetype');
+	font-family: "Hagrid";
+	src: url("assets/fonts/Hagrid-Regular-trial.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
-  }
+}
 @font-face {
-font-family: 'Hagrid';
-src: url('assets/fonts/Hagrid-Italic-trial.ttf') format('truetype');
-font-weight: normal;
-font-style: italic;
+	font-family: "Hagrid";
+	src: url("assets/fonts/Hagrid-Italic-trial.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
 }
 
 @font-face {
-font-family: 'Hagrid Text';
-src: url('assets/fonts/Hagrid-Text-Extrabold-trial.ttf') format('truetype');
-font-weight: 800;
-font-style: normal;
+	font-family: "Hagrid Text";
+	src: url("assets/fonts/Hagrid-Text-Extrabold-trial.ttf") format("truetype");
+	font-weight: 800;
+	font-style: normal;
 }
 
 @font-face {
-font-family: 'Hagrid Text';
-src: url('assets/fonts/Hagrid-Text-Extrabold-Italic-trial.ttf') format('truetype');
-font-weight: 800;
-font-style: italic;
+	font-family: "Hagrid Text";
+	src: url("assets/fonts/Hagrid-Text-Extrabold-Italic-trial.ttf") format("truetype");
+	font-weight: 800;
+	font-style: italic;
 }
-
 
 * {
 	margin: 0;
@@ -63,9 +62,19 @@ html {
 	line-height: 1.25;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, span, a, li {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li {
 	color: rgba(117, 143, 117, 1);
-  }
+}
 
 body {
 	--tw-bg-opacity: 1;
@@ -82,14 +91,15 @@ body {
 	background-image: url("/src/assets/img/estrella-background.png");
 }
 
-h1,h2{
-	font-family: 'Hagrid Text', sans-serif;
+h1,
+h2 {
+	font-family: "Hagrid Text", sans-serif;
 	line-height: 2rem;
-	font-size: 1.5rem
+	font-size: 1.5rem;
 }
 
-p{
-	font-family: 'Hagrid', sans-serif;
+p {
+	font-family: "Hagrid", sans-serif;
 	line-height: 1.5rem;
 }
 
