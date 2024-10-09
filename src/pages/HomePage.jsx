@@ -1,19 +1,23 @@
-import Hero from "@/components/hero/Hero"
-import PackList from "@/components/packs/PackList"
-import TikTokList from "@/components/tiktok/TikTokList"
-import { packsData, reviewsData, tiktokData } from "@/data/constants"
-import ReviewList from "@/components/reviews/ReviewList"
-import { sliderProps } from "@/data/constants"
-import ProfeNomadaInfo from "@/components/ProfeNomadasInfo/ProfeNomadasInfo"
+import Header from "@/components/Header"
+import About from "@/components/About"
+import Stats from "@/components/Stats"
+import Services from "@/components/Services"
+import CallToAction from "@/components/CallToAction"
+import UniqueValuePropositions from "@/components/UniqueValuePropositions"
+import Testimonials from "@/components/Testimonials"
+import Footer from "@/components/Footer"
+
 const HomePage = () => {
 	return (
 		<div>
-			{/* Esto es para ir viend como queda */}
-			<Hero />
-			<ProfeNomadaInfo />
-			<PackList packs={packsData} />
-			<TikTokList tiktoks={tiktokData} sliderProps={sliderProps} />
-			<ReviewList reviews={reviewsData} sliderProps={sliderProps} />
+			<Header />
+			<About />
+			<Stats />
+			<Services />
+			<CallToAction />
+			<UniqueValuePropositions />
+			<Testimonials />
+			<Footer />
 		</div>
 	)
 }
